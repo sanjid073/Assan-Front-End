@@ -1,0 +1,81 @@
+.teg-line {
+  position: absolute;
+  top: 10%;
+}
+.guide-top-left {
+  .guide-left-img {
+    img {
+      position: relative;
+      margin-top: -40%;
+    }
+  }
+  .guide-teg {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+  }
+  .guide-read {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #4e90f3;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .guide-subline-1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #707070;
+    span {
+      color: #4e90f3;
+    }
+  }
+  .guide-left-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 14px;
+
+    color: #707070;
+  }
+}
+.guide-colths {
+  h6 {
+      margin-top: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .guide-pri {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 12px 0;
+  }
+  .colths-text{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 36px;
+    color: #707070;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .guide-left-img {
+        img {
+          position: relative;
+          margin-top: 0% !important;
+        }
+      }
+      .intro-box-pic{
+          display: none;
+      }
+}

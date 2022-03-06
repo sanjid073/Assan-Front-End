@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="SCSS/style.css" />
+    <title>Guide Details</title>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav
+        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded"
+        id="navbar"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <div class="flex nav-nn">
+            <a href="#" class="flex items-center">
+              <img
+                src="/assets/Group 563.png"
+                class="mr-3 h-6 sm:h-10 icon"
+                alt="Flowbite Logo"
+              />
+              <p class="self-center text-xl font-semibold whitespace-nowrap">
+                Home
+              </p>
+            </a>
+
+            <a href="#" class="flex items-center ml-2">
+              <img
+                src="/assets/Group 624.png"
+                class="mr-3 h-6 sm:h-10 icon"
+                alt="Flowbite Logo"
+              />
+              <p class="self-center text-xl font-semibold whitespace-nowrap">
+                Guides
+              </p>
+            </a>
+            <a href="#" class="flex items-center ml-2">
+              <img
+                src="/assets/Vector (5).png"
+                class="mr-3 h-6 sm:h-10 icon"
+                alt="Flowbite Logo"
+              />
+              <p class="self-center text-xl font-semibold whitespace-nowrap">
+                Travel
+              </p>
+            </a>
+            <a href="#" class="flex items-center ml-2">
+              <img
+                src="/assets/navIcon.png"
+                class="mr-3 h-6 sm:h-10 icon"
+                alt="Flowbite Logo"
+              />
+              <p class="self-center text-xl font-semibold whitespace-nowrap">
+                Stores
+              </p>
+            </a>
+            <a href="#" class="flex items-center ml-2">
+              <img
+                src="/assets/navIcon2.png"
+                class="mr-3 h-6 sm:h-10 icon"
+                alt="Flowbite Logo"
+              />
+              <p class="self-center text-xl font-semibold whitespace-nowrap">
+                Categories
+              </p>
+            </a>
+          </div>
+          <div class="flex md:order-2">
+            <div class="hidden relative mr-3 md:mr-0 md:block">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-dark"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="email-adress-icon"
+                class="block p-2 pl-10"
+                placeholder="Search..."
+              />
+              <div
+                class="flex absolute inset-y-0 right-3 items-center pointer-events-none"
+              >
+                <span>Category</span>
+                <svg
+                  viewBox="0 0 32 32"
+                  class="icon icon-chevron-bottom"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16.003 18.626l7.081-7.081L25 13.46l-8.997 8.998-9.003-9 1.917-1.916z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <button
+              data-collapse-toggle="mobile-menu-3"
+              type="button"
+              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-3"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex md:order-3 lang">
+            <div class="relative mr-3 md:mr-0 md:block">
+              <div
+                class="flex absolute inset-y-0 right-2 items-center pointer-events-none"
+              >
+                <img src="/assets/india.png" alt="" />
+                <span class="font-medium">EN</span>
+                <img src="/assets/navIcon3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden justify-center items-center w-full md:flex md:w-auto md:order-1"
+            id="mobile-menu-3"
+          >
+            <img width="147px" height="48px" src="/assets/navlogo.png" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="intro-box-pic">
+        <img class="w-full" src="/assets/Rectangle 1432.png" alt="" />
+        <div class="container mx-auto">
+          <p class="font-semibold mt-3 teg-line">
+            Asaan / Guide / Decor & Furniture
+          </p>
+        </div>
+      </div>
+
+      <section class="mt-4">
+        <div id="guide-category-page">
+          <div class="container mx-auto">
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 mx-auto">
+              <!-- left -->
+              <div class=" lg:col-span-2 py-4 rounded w-full">
+                <div class="guide-top-left">
+                  <div class="guide-left-img">
+                    <img
+                      class="w-full"
+                      src="/assets/Mask Group (12).png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex justify-between mt-5">
+                    <p class="guide-teg">WOMENS FASHION & ACCESSORIES</p>
+                    <p class="guide-read pb-1">3 min read</p>
+                  </div>
+                  <h3 class="mt-2">
+                    At Serino, Simplicity and Purpose Reign Supreme
+                  </h3>
+                  <p class="guide-subline-1 mt-3">
+                    by <span>Shweta Palikar</span> | August 13, 2021, 09:30 am
+                  </p>
+                  <p class="guide-left-text">
+                    At one point, Joseph Serino was catching flights every week.
+                    The creative veteran, who spent the past two decades leading
+                    product at Nike and Calvin Klein, noticed that his suitcase
+                    was always stocked with the same clothes—versatile
+                    essentials suitable for an airplane, a business meeting, or
+                    a night on the town. At the same time, he was observing the
+                    gargantuan amount of waste produced by fashion labels and
+                    began thinking about more sustainable ways to produce
+                    simple, high-quality basics whose appeal would endure over
+                    time.
+                    <br /><br />
+                    He, along with his creative partner Lexi Sacchi, took these
+                    intuitive insights and recently launched Serino, a label
+                    that offers a tightly curated collection of sustainably
+                    produced knitwear basics marked by timeless silhouettes and
+                    a distinct method of make.
+                  </p>
+                </div>
+                <div class="guide-colths">
+                  <div class="grid lg:grid-cols-2 grid-cols-1 mt-10">
+                    <img
+                      src="/assets/Screenshot 2021-11-16 at 2.15 1.png"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Screenshot 2021-11-16 at 2.15 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <h6>
+                    Tell me about how you got Serino Studio off the ground. How
+                    does your background at Nike, <br />
+                    Calvin Klein, and the tech world inform the brand?
+                  </h6>
+                  <p class="guide-pri">
+                    Price: Rs 7000 - Rs 14000 at Bed Bath & Beyond
+                  </p>
+                  <p class="colths-text">
+                    We conceived Serino in 2018 after I spent many years on the
+                    West Coast. When I returned to New York, I started
+                    contemplating the idea of building my own brand. We started
+                    by looking at the market—what was trending and how people
+                    were living—and knew that the world was getting more casual.
+                    People are more relaxed now, regardless of industry.
+                  </p>
+                </div>
+                <!-- Relevant Coupons & Deals -->
+                <!-- <hr class="mt-5" /> -->
+                <div class="relevant-box">
+                  <h3 class="text-2xl font-bold">Relevant Coupons & Deals</h3>
+
+                  <!-- box1 -->
+                  <div
+                    class="r-box flex my-6 lg:flex-row flex-col shadow-lg p-3 pb-8 bg-white rounded-md items-center justify-between"
+                  >
+                    <div class="r-img flex cupn-box relative items-center">
+                      <div class="r-text">
+                        <img src="/assets/amazonlogo.png" alt="" />
+                        <p class="r-text-mute">Ends in 2 days</p>
+                      </div>
+                      <div class="r-store-text">
+                        <h2>Upto 40% Sale</h2>
+                        <h3 class="text-xl font-semibold">
+                          20% Off Your Next Purchase With <br />
+                          Myntra Email Sign Up
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="cat">
+                      <img
+                        class="ml-auto r-share"
+                        src="/assets/Vector (6).png"
+                        alt=""
+                      />
+                      <button
+                        class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                      >
+                        Get Deal
+                      </button>
+                      <img
+                        class="ml-auto r-details"
+                        src="/assets/Group 35.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- box2 -->
+                  <div
+                    class="r-box flex my-6 lg:flex-row flex-col shadow-lg p-3 pb-8 bg-white rounded-md items-center justify-between"
+                  >
+                    <div class="r-img flex cupn-box relative items-center">
+                      <div class="r-text">
+                        <img src="/assets/amazonlogo.png" alt="" />
+                        <p class="r-text-mute">Ends in 2 days</p>
+                      </div>
+                      <div class="r-store-text">
+                        <h2>Upto 40% Sale</h2>
+                        <h3 class="text-xl font-semibold">
+                          20% Off Your Next Purchase With <br />
+                          Myntra Email Sign Up
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="cat">
+                      <img
+                        class="ml-auto r-share"
+                        src="/assets/Vector (6).png"
+                        alt=""
+                      />
+                      <button
+                        class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                      >
+                        Get Deal
+                      </button>
+                      <img
+                        class="ml-auto r-details"
+                        src="/assets/Group 35.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- box3 -->
+                  <div
+                    class="r-box flex my-6 lg:flex-row flex-col shadow-lg p-3 pb-8 bg-white rounded-md items-center justify-between"
+                  >
+                    <div class="r-img flex cupn-box relative items-center">
+                      <div class="r-text">
+                        <img src="/assets/amazonlogo.png" alt="" />
+                        <p class="r-text-mute">Ends in 2 days</p>
+                      </div>
+                      <div class="r-store-text">
+                        <h2>Upto 40% Sale</h2>
+                        <h3 class="text-xl font-semibold">
+                          20% Off Your Next Purchase With <br />
+                          Myntra Email Sign Up
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="cat">
+                      <img
+                        class="ml-auto r-share"
+                        src="/assets/Vector (6).png"
+                        alt=""
+                      />
+                      <button
+                        class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                      >
+                        Get Deal
+                      </button>
+                      <img
+                        class="ml-auto r-details"
+                        src="/assets/Group 35.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="guide-colths mt-16">
+                    
+                    <h6>
+                        Serino is rooted in simplicity, particularly distilling elements down to the absolute essential. <br> Can you tell me more about the brand’s 1-7-5 philosophy? 
+                    </h6>
+                    <p class="colths-text my-8">
+                        There are high-end brands with basics in their collection, but they also have spring, summer, fall, and winter collections. We thought “what if we don’t follow the fashion system by season, but deliver by material platform?” Our first collection, for example, explores these beautiful cottons, but we also plan to roll out merino wool and other materials down the line.
+                    </p>
+                    <div class="mt-10">
+                        <img
+                        class="w-full"
+                          src="/assets/Screenshot 2021-11-16 at 2.18 1.png"
+                          alt=""
+                        />
+                      </div>
+                      <h6>
+                        Tell me about how you got Serino Studio off the ground. How
+                        does your background at Nike, <br />
+                        Calvin Klein, and the tech world inform the brand?
+                      </h6>
+                      <p class="guide-pri">
+                        Price: Rs 7000 - Rs 14000 at Bed Bath & Beyond
+                      </p>
+                      <p class="colths-text">
+                        We conceived Serino in 2018 after I spent many years on the
+                        West Coast. When I returned to New York, I started
+                        contemplating the idea of building my own brand. We started
+                        by looking at the market—what was trending and how people
+                        were living—and knew that the world was getting more casual.
+                        People are more relaxed now, regardless of industry.
+                      </p>
+                  </div>
+
+                    <!-- Categories -->
+            <section>
+                <div class="Categories mt-12">
+                    <div class="container mx-auto">
+                      <div class="popular-heading flex justify-between mb-6">
+                          <h3 class="font-bold text-2xl">Relevant Categories</h3>
+                        </div>
+                        <div class="grid lg:grid-cols-3 gap-8 grid-cols-1 my-5 relative">
+                          <div class="must-read-card">
+                              <img src="/assets/Rectangle 1419.png" alt="">
+                             
+                          </div>
+                          <div class="must-read-card">
+                              <img src="/assets/Rectangle 1419.png" alt="">
+                              
+                          </div>
+                          <div class="must-read-card">
+                              <img src="/assets/Rectangle 1419.png" alt="">
+                            
+                          </div>            
+                     </div>
+                     
+                    </div>
+                </div>
+            </section>
+
+              </div>
+
+              <!-- right -->
+              <div class="py-4 rounded w-full">
+                <h3 class="text-2xl font-bold">Top & Trending Guides</h3>
+                <div class="py-4 rounded w-full bg-white">
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- subcribe -box -->
+                  <div class="subcribe-box px-10 py-6 mt-5">
+                    <h3 class="text-2xl font-semibold text-white">
+                      Subscribe to get <br />
+                      hand-picked deals <br />
+                      direct to your inbox
+                    </h3>
+                    <div class="relative z-0 mb-6 w-full group mt-5">
+                      <input
+                        type="email"
+                        name="floating_email"
+                        class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none"
+                        placeholder=" "
+                        required
+                      />
+                      <label
+                        class="absolute text-sm text-white duration-300 scale-75 top-3 -z-10 origin-[0]"
+                        >Email address</label
+                      >
+                    </div>
+                    <button class="subcribe-button">subscribe</button>
+                  </div>
+                  
+                  <img class="w-full mt-5" src="/assets/Group 377.png" alt="" />
+
+                  <!-- Popular Stores -->
+                  <div id="popular-stores">
+                    <div class="container mx-auto">
+                      <h3 class="font-bold text-2xl">Popular Stores</h3>
+
+                      <div class="">
+                        <!-- store box 1 -->
+                        <div class="border-b py-4 flex">
+                          <img
+                            class="ml-4"
+                            width="57px"
+                            src="/assets/Group 28.png"
+                            alt=""
+                          />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">
+                              17 Coupons
+                            </p>
+                          </div>
+                        </div>
+                        <!-- store box 2 -->
+                        <div class="border-b py-4 flex">
+                          <img
+                            class="ml-4"
+                            width="57px"
+                            src="/assets/Group 28.png"
+                            alt=""
+                          />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">
+                              17 Coupons
+                            </p>
+                          </div>
+                        </div>
+                        <!-- store box 3 -->
+                        <div class="border-b py-4 flex">
+                          <img
+                            class="ml-4"
+                            width="57px"
+                            src="/assets/Group 28.png"
+                            alt=""
+                          />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">
+                              17 Coupons
+                            </p>
+                          </div>
+                        </div>
+                        <!-- store box 4 -->
+                        <div class="border-b py-4 flex">
+                          <img
+                            class="ml-4"
+                            width="57px"
+                            src="/assets/Group 28.png"
+                            alt=""
+                          />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">
+                              17 Coupons
+                            </p>
+                          </div>
+                        </div>
+                        <!-- store box 5 -->
+                        <div class="border-b py-4 flex">
+                          <img
+                            class="ml-4"
+                            width="57px"
+                            src="/assets/Group 28.png"
+                            alt=""
+                          />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">
+                              17 Coupons
+                            </p>
+                          </div>
+                        </div>
+                        <!-- store box 6 -->
+                        <div class="border-b py-4 flex">
+                          <img
+                            class="ml-4"
+                            width="57px"
+                            src="/assets/Group 28.png"
+                            alt=""
+                          />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">
+                              17 Coupons
+                            </p>
+                          </div>
+                        </div>
+                        <!-- store box 7 -->
+                        <div class="border-b py-4 flex">
+                          <img
+                            class="ml-4"
+                            width="57px"
+                            src="/assets/Group 28.png"
+                            alt=""
+                          />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">
+                              17 Coupons
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        class="w-full mb-10 mt-5 bg-gray-100 text-gray-400 text-sm font-semibold rounded-full py-1.5"
+                      >
+                        SEE ALL STORES
+                      </button>
+                    </div>
+                  </div>
+                 
+                  <img class="w-full mt-2" src="/assets/Group 53.png" alt="" />                        
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+          <div class="container mx-auto">
+
+              <h3 class="font-bold text-2xl">Shopping Guides you may like</h3>
+              <div class="flex items-end mt-4 flex-col lg:flex-row">
+                  <img src="/assets/Group 378.png" alt="">
+                  <div class="ml-4 sm:mt-5">
+                    <p class="text-sm font-semibold">
+                      MENS FASHION & ACCESSORIES
+                    </p>
+                    <h3 class="font-bold text-2xl">
+                      Official Images of the KAWS x <br />
+                      sacai Nike Blazer Low in Blue Have Surfaced
+                    </h3>
+                    <p class="text-sm text-gray-400 mt-3">
+                      A classic silhouette with a signature sacai layering
+                      treatment and playful colorways by KAWS.
+                    </p>
+                  </div>
+              </div>
+                   <!-- must read -->
+                   <section>
+                    <div class="must-read mt-20 relative">
+                               <div class="grid lg:grid-cols-4 gap-8 grid-cols-1 my-5">
+                                    <div class="must-read-card">
+                                        <img src="/assets/Group 374.png" alt="">
+                                        <p class="text-sm mt-3 font-semibold">HOBBY & LEISURE</p>
+                                        <h3 class="text-lg font-bold mt-3">Ross Lovegrove masterfully employs cutting-edge technology to replicate the intricate forms. </h3>
+                     <p class="text-lg mt-4 border-t border-black inline-block">BY LOREN ISPUM</p>
+                                    </div>
+                                    <div class="must-read-card">
+                                        <img src="/assets/Group 374.png" alt="">
+                                        <p class="text-sm mt-3 font-semibold">HOBBY & LEISURE</p>
+                                        <h3 class="text-lg font-bold mt-3">Ross Lovegrove masterfully employs cutting-edge technology to replicate the intricate forms. </h3>
+                     <p class="text-lg mt-4 border-t border-black inline-block">BY LOREN ISPUM</p>
+                                    </div>
+                                    <div class="must-read-card">
+                                        <img src="/assets/Group 374.png" alt="">
+                                        <p class="text-sm mt-3 font-semibold">HOBBY & LEISURE</p>
+                                        <h3 class="text-lg font-bold mt-3">Ross Lovegrove masterfully employs cutting-edge technology to replicate the intricate forms. </h3>
+                     <p class="text-lg mt-4 border-t border-black inline-block">BY LOREN ISPUM</p>
+                                    </div>
+                                    <div class="must-read-card">
+                                        <img src="/assets/Group 374.png" alt="">
+                                        <p class="text-sm mt-3 font-semibold">HOBBY & LEISURE</p>
+                                        <h3 class="text-lg font-bold mt-3">Ross Lovegrove masterfully employs cutting-edge technology to replicate the intricate forms. </h3>
+                     <p class="text-lg mt-4 border-t border-black inline-block">BY LOREN ISPUM</p>
+                                    </div>
+                                    <div class="sidearrow-1">
+                                       <img src="/assets/sidearrow.png" alt="" />
+                                     </div>
+                                     
+                               </div>
+                               <div class="flex mb-5 mt-12">
+                                   <div class="rounded pb-1 w-1/4 bg-black"></div>
+                                   <div class="rounded pb-1 w-3/4 bg-gray-300"></div>
+                                 </div>
+                        </div>
+                    </div>
+             </section>
+             
+          </div>
+
+
+          <div class="intro-box-pic">
+            <img class="w-full" src="/assets/Rectangle 1433.png" alt="" />
+            <div class="container mx-auto">
+              <p class="font-semibold mt-3 teg-line">
+                Asaan / Guide / Decor & Furniture
+              </p>
+            </div>
+          </div>
+          <div class="container mx-auto">
+            <div class="grid lg:grid-cols-3 grid-cols-1">
+
+     
+                <div class="col-span-2">
+                     
+               <div class="guide-top-left mb-8">
+                 <div class="guide-left-img">
+                   <img
+                     class="w-full"
+                     src="/assets/Mask Group (13).png"
+                     alt=""
+                   />
+                 </div>
+                 <div class="flex justify-between mt-5">
+                   <p class="guide-teg">WOMENS FASHION & ACCESSORIES</p>
+                   <p class="guide-read pb-1">3 min read</p>
+                 </div>
+                 <h3 class="mt-2">
+                   At Serino, Simplicity and Purpose Reign Supreme
+                 </h3>
+                 <p class="guide-subline-1 mt-3">
+                   by <span>Shweta Palikar</span> | August 13, 2021, 09:30 am
+                 </p>
+                 <p class="guide-left-text">
+                   At one point, Joseph Serino was catching flights every week.
+                   The creative veteran, who spent the past two decades leading
+                   product at Nike and Calvin Klein, noticed that his suitcase
+                   was always stocked with the same clothes—versatile
+                   essentials suitable for an airplane, a business meeting, or
+                   a night on the town. At the same time, he was observing the
+                   gargantuan amount of waste produced by fashion labels and
+                   began thinking about more sustainable ways to produce
+                   simple, high-quality basics whose appeal would endure over
+                   time.
+                   <br /><br />
+                   He, along with his creative partner Lexi Sacchi, took these
+                   intuitive insights and recently launched Serino, a label
+                   that offers a tightly curated collection of sustainably
+                   produced knitwear basics marked by timeless silhouettes and
+                   a distinct method of make.
+                 </p>
+               </div>
+                </div>
+                <div ></div>
+     
+               </div>
+          </div>
+          
+
+      </section>
+    </main>
+    <footer>
+        <!-- footer -->
+        <div id="footer">
+         <div class="container mx-auto">
+           <div class="footer-box">
+             <div class="flex justify-between lg:flex-row flex-col">
+               <div class="footer-left w-1/2">
+                 <img width="110px" src="/assets/navlogo.png" alt="" />
+                 <p class="text-white">
+                   Asaan is reader-supported. When you buy something using a link
+                   on this site,<br />
+                   we may earn a small commission. This will not incur additional
+                   cost to you.
+                 </p>
+                 <div class="footer-icon">
+ 
+                   <!-- <img  src="/assets/Group 32.png" alt=""> -->
+                   <div class="flex">
+                      <div class="iconss">
+                        <img src="/assets/instagram (1).png" alt="">
+                      </div>
+                      <div class="iconss">
+                       <img src="/assets/facebook.png" alt="">
+                     </div>
+                      <div class="iconss">
+                       <img src="/assets/Twitter.png" alt="">
+                     </div>
+                      <div class="iconss">
+                       <img src="/assets/Linkedin.png" alt="">
+                     </div>
+                      <div class="iconss">
+                       <img src="/assets/Youtube (1).png" alt="">
+                     </div>
+                      <div class="iconss">
+                       <img src="/assets/Pinterest.png" alt="">
+                     </div>
+                   </div>
+                   
+                 </div>
+               </div>
+               <div class="footer-right text-white">
+                 <div class="flex right-1">
+                   <div class="mr-8">
+                     <ul>
+                       <li>Browse Sections</li>
+                       <li>Home</li>
+                       <li>Guides</li>
+                       <li>Travel</li>
+                       <li>Tags</li>
+                       <li>Our Writers</li>
+                       <li>Stores Categories</li>
+                     </ul>
+                   </div>
+                   <div>
+                     <ul>  
+                       <li>Information</li>
+                       <li> Sitemap</li>
+                       <li> About Us</li>
+                       <li> Careers</li>
+                       <li>Contact Us</li>
+                       <li>Privacy</li>
+                       <li>Conditions</li>
+                     </ul>
+                   </div>
+                   
+                 </div>
+                 <div class="mt-6 mr-auto ">
+                   <img class="block lg:ml-auto mx-auto" src="/assets/Group 201.png" alt="">
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+ 
+       <!-- news letter-box -->
+       <div id="news-letter">
+          <div class="container mx-auto text-center">
+                <p class="text-white">Subscribe to get hand-picked deals direct to your inbox</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+          </div>
+       </div>
+     </footer>
+  </body>
+</html>

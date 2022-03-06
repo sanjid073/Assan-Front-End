@@ -1,0 +1,227 @@
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 250px;
+  color: #fff;
+  transition: var(--tran-05);
+  z-index: 1;
+  padding-left: 5px;
+  background: #ffffff;
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.07);
+}
+.menu-bar {
+  margin-top: 60px;
+}
+.sidebar.close {
+  width: 41px;
+}
+.footer-1{
+  #footer,
+#news-letter {
+  position: relative;
+  z-index: 2;
+}
+}
+/* ===== Reusable code - Here ===== */
+.sidebar li {
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sidebar header .image,
+.sidebar .icon {
+  min-width: 60px;
+  border-radius: 6px;
+}
+
+.sidebar .icon {
+  min-width: 60px;
+  border-radius: 6px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.sidebar .text,
+.sidebar .icon {
+  color: var(--text-color);
+  transition: var(--tran-03);
+}
+
+.sidebar .text {
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 1;
+}
+.sidebar.close .text {
+  opacity: 0;
+}
+
+.store-guide-main {
+  background: #f5f5f6;
+
+  .guide-right-head {
+    img {
+      margin-top: 15px;
+      width: 60px;
+    }
+  }
+  #store-guide-section {
+    margin-top: 50px;
+  }
+  .subline-text2 {
+    margin-top: -14px;
+    margin-right: 48px;
+    p {
+      position: relative;
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      box-sizing: border-box;
+      border-radius: 29px;
+      top: 40%;
+      font-weight: 500;
+      padding: 0px 8px;
+      margin-left: auto;
+      display: inline-block;
+    }
+  }
+  .link {
+    img {
+      width: 11px !important;
+      height: 11px !important;
+    }
+    p {
+      font-weight: 500;
+      font-size: 12px;
+
+      color: #2489ff;
+    }
+  }
+  .store-guide-right {
+    .store-right-heading {
+      h3 {
+        margin-top: -35px;
+      }
+    }
+    .cat {
+      position: relative;
+      .grp {
+        position: absolute;
+        bottom: -40px;
+        right: 0;
+      }
+    }
+    .catt {
+      position: relative;
+      .grpp {
+        position: absolute;
+        bottom: -36px;
+        right: 18px;
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+    .store-text {
+      h2 {
+        font-weight: bold;
+        font-size: 20px;
+        background: -webkit-linear-gradient(#ac1eda, #e56996);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: linear-gradient(#ac1eda, #e56996) !important;
+      }
+    }
+  }
+  
+  .main-btn {
+    button {
+      background: linear-gradient(91.37deg, #ff4e58 -7.71%, #ff8a3b 126.22%);
+      width: 125px;
+      margin-left: -40%;
+      z-index: 3;
+      font-size: 12px;
+    }
+    :nth-child(2) {
+      font-size: 12px;
+      line-height: 14px;
+      color: #a3a3a3;
+      background: #ffffff;
+      border: 1px solid #b5b5b5;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border-radius: 50px;
+      position: absolute;
+      z-index: 0;
+      bottom: 1px;
+      right: 3%;
+    }
+  }
+}
+.subcribe-box {
+  width: 100%;
+  height: 299px !important;
+
+  background: linear-gradient(125.69deg, #e6aa11 -11.85%, #f17888 114.37%);
+  border-radius: 5px;
+  .subcribe-button {
+    width: 100%;
+    height: 46px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #ec9051;
+
+    background: #ffffff;
+    border-radius: 40px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .cat-3 {
+    h3 {
+      font-size: 15px;
+      text-align: center;
+    }
+    p {
+      font-size: 8px;
+      font-weight: normal;
+      width: 100%;
+    }
+    button {
+      width: 80px;
+      font-weight: 100;
+      font-size: 8px;
+      height: 37px;
+    }
+    .grp {
+      display: none;
+    }
+  }
+  .grpp {
+    display: none;
+  }
+  #navbar {
+    display: none !important;
+  }
+  .sidebar {
+    display: none;
+  }
+  .subline-text2 {
+    display: none;
+  }
+  body {
+    max-width: 100%;
+  }
+}

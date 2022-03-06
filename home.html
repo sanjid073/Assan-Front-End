@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="SCSS/style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <!-- intro -->
+      <div class="intro text-center p-2">
+        <p>
+          <span>Asaan : We help you save & decide when you buy online</span
+          >Guides to help you cut through the ecommerce clutter. Coupons,
+          Discount Codes and Deals for Big Savings when shopping online.
+        </p>
+      </div>
+      <!-- navbar -->
+
+      <nav
+        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded"
+        id="navbar"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="/assets/navIcon.png"
+              class="mr-3 h-6 sm:h-10 icon"
+              alt="Flowbite Logo"
+            />
+            <p class="self-center text-xl font-semibold whitespace-nowrap">
+              Stores
+            </p>
+          </a>
+          <a href="#" class="flex items-center nav-categories">
+            <img
+              src="/assets/navIcon2.png"
+              class="mr-3 h-6 sm:h-10 icon"
+              alt="Flowbite Logo"
+            />
+            <p class="self-center text-xl font-semibold whitespace-nowrap">
+              Categories
+            </p>
+          </a>
+          <div class="flex md:order-2">
+            <div class="hidden relative mr-3 md:mr-0 md:block">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-dark"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="email-adress-icon"
+                class="block p-2 pl-10"
+                placeholder="Search..."
+              />
+              <div
+                class="flex absolute inset-y-0 right-3 items-center pointer-events-none"
+              >
+                <span>Category</span>
+                <svg
+                  viewBox="0 0 32 32"
+                  class="icon icon-chevron-bottom"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16.003 18.626l7.081-7.081L25 13.46l-8.997 8.998-9.003-9 1.917-1.916z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <button
+              data-collapse-toggle="mobile-menu-3"
+              type="button"
+              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-3"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex md:order-3 lang">
+            <div class="relative mr-3 md:mr-0 md:block">
+              <div
+                class="flex absolute inset-y-0 right-2 items-center pointer-events-none"
+              >
+                <img src="/assets/india.png" alt="" />
+                <span class="font-medium">EN</span>
+                <img src="/assets/navIcon3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden justify-center nav-logo items-center w-full md:flex md:w-auto md:order-1"
+            id="mobile-menu-3"
+          >
+            <img width="147px" height="48px" src="/assets/navlogo.png" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner -->
+      <section id="banner">
+        <div class="container mx-auto">
+          <img src="/assets/banner.png" alt="" />
+          <p class="mt-3">
+            <span class="font-bold">Asaan</span> : We help you save & decide
+            when you buy online
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Top Stores -->
+      <div class="brand-partner mt-5 relative">
+        <div class="container mx-auto">
+          <h3 class="text-xl font-bold">Top Stores</h3>
+
+          <div class="grid grid-cols-4 lg:grid-cols-11 gap-2 mt-2">
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+            <img src="/assets/Group 379.png" alt="" />
+          </div>
+          <div class="sidearrow-2">
+            <img src="/assets/sidearrow.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Treding Coupons & Deals -->
+      <div class="container mx-auto">
+        <div id="treding_coupons">
+          <div class="section-heading flex justify-between">
+            <h3>Treding Coupons & Deals</h3>
+            <div class="flex flter-1 mt-2">
+              <div class="show-btn">
+                <p>See more</p>
+              </div>
+              <div class="offer-btn">
+                <p class="mr-15">Best Offers</p>
+              </div>
+              <div class="flter-1">
+                <img class="mt-1" src="/assets/Group 350.png" alt="" />
+              </div>
+              <p class="filter">Filter</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="treding-deals grid grid-cols-1 gap-6 lg:grid-cols-4 mx-auto mt-20"
+        >
+          <!-- card 1-->
+          <div
+            class="max-w-md py-4 px-8 bg-white drop-shadow-2xl rounded-lg mb-10"
+          >
+            <div class="flex -mt-10">
+              <img
+                class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                src="/assets/metr.png"
+              />
+              <div class="subline-text">
+                <p class="">Editors Choice</p>
+              </div>
+              <div class="leka">
+                <img src="/assets/Layer 3.png" alt="" />
+                <img class="ml-5 mr-5" src="/assets/Vector (2).png" alt="" />
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mt-5">Myntra</h3>
+              <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+              <p class="mt-2 text-gray-600">
+                Get up to 5% OFF on all-natural pregnancy skincare products for
+                sensitive skins.
+              </p>
+            </div>
+            <div class="flex card-btn mt-4">
+              <button
+                class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                Show Coupon
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                YourDiscount20
+              </button>
+            </div>
+            <p class="text-red-600 font-semibold text-center">End in 5 Days</p>
+          </div>
+          <!-- card 2-->
+          <div
+            class="max-w-md py-4 px-8 bg-white drop-shadow-2xl rounded-lg mb-10"
+          >
+            <div class="flex -mt-10">
+              <img
+                class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                src="/assets/amazonlogo.png"
+              />
+              <div class="subline-text">
+                <p class="">Diwali Festive</p>
+              </div>
+              <div class="leka">
+                <img src="/assets/Layer 3.png" alt="" />
+                <img class="ml-5 mr-5" src="/assets/Vector (2).png" alt="" />
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mt-5">Amazon</h3>
+              <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+              <p class="mt-2 text-gray-600">
+                Get up to 5% OFF on all-natural pregnancy skincare products for
+                sensitive skins.
+              </p>
+            </div>
+            <div class="flex card-btn mt-4">
+              <button
+                class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                Show Coupon
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                YourDiscount20
+              </button>
+            </div>
+            <p class="text-red-600 font-semibold text-center">End in 5 Days</p>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="max-w-md py-4 px-8 bg-white drop-shadow-2xl rounded-lg mb-10"
+          >
+            <div class="flex -mt-10">
+              <img
+                class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                src="/assets/flipcart.png"
+              />
+              <div class="subline-text">
+                <p class="">Exclusive</p>
+              </div>
+              <div class="leka">
+                <img src="/assets/Layer 3.png" alt="" />
+                <img class="ml-5 mr-5" src="/assets/Vector (2).png" alt="" />
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mt-5">Flipkart</h3>
+              <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+              <p class="mt-2 text-gray-600">
+                Get up to 5% OFF on all-natural pregnancy skincare products for
+                sensitive skins.
+              </p>
+            </div>
+            <div class="flex card-btn mt-4">
+              <button
+                class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                Show Coupon
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                YourDiscount20
+              </button>
+            </div>
+            <p class="text-red-600 font-semibold text-center">End in 5 Days</p>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="max-w-md py-4 px-8 bg-white drop-shadow-2xl rounded-lg mb-10"
+          >
+            <div class="flex -mt-10">
+              <img
+                class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                src="/assets/mama.png"
+              />
+              <div class="subline-text">
+                <p class="">Festival Sale</p>
+              </div>
+              <div class="leka">
+                <img src="/assets/Layer 3.png" alt="" />
+                <img class="ml-5 mr-5" src="/assets/Vector (2).png" alt="" />
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mt-5">Mamaearth</h3>
+              <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+              <p class="mt-2 text-gray-600">
+                Get up to 5% OFF on all-natural pregnancy skincare products for
+                sensitive skins.
+              </p>
+            </div>
+            <div class="flex card-btn mt-4">
+              <button
+                class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                Show Coupon
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                YourDiscount20
+              </button>
+            </div>
+            <p class="text-red-600 font-semibold text-center">End in 5 Days</p>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="max-w-md py-4 px-8 bg-white drop-shadow-2xl rounded-lg mb-10"
+          >
+            <div class="flex -mt-10">
+              <img
+                class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                src="/assets/herb.png"
+              />
+              <div class="subline-text">
+                <p class="">New Year sale</p>
+              </div>
+              <div class="leka">
+                <img src="/assets/Layer 3.png" alt="" />
+                <img class="ml-5 mr-5" src="/assets/Vector (2).png" alt="" />
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mt-5">iHerb</h3>
+              <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+              <p class="mt-2 text-gray-600">
+                Get up to 5% OFF on all-natural pregnancy skincare products for
+                sensitive skins.
+              </p>
+            </div>
+            <div class="flex card-btn mt-4">
+              <button
+                class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                Show Coupon
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                YourDiscount20
+              </button>
+            </div>
+            <p class="text-red-600 font-semibold text-center">End in 5 Days</p>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="max-w-md py-4 px-8 bg-white drop-shadow-2xl rounded-lg mb-10"
+          >
+            <div class="flex -mt-10">
+              <img
+                class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                src="/assets/bodyshop.png"
+              />
+              <div class="subline-text">
+                <p class="">Festival Sale</p>
+              </div>
+              <div class="leka">
+                <img src="/assets/Layer 3.png" alt="" />
+                <img class="ml-5 mr-5" src="/assets/Vector (2).png" alt="" />
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mt-5">The Body Shop</h3>
+              <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+              <p class="mt-2 text-gray-600">
+                Get up to 5% OFF on all-natural pregnancy skincare products for
+                sensitive skins.
+              </p>
+            </div>
+            <div class="flex card-btn mt-4">
+              <button
+                class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                Show Coupon
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                YourDiscount20
+              </button>
+            </div>
+            <p class="text-red-600 font-semibold text-center">End in 5 Days</p>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="max-w-md py-4 px-8 bg-white drop-shadow-2xl rounded-lg mb-10"
+          >
+            <div class="flex -mt-10">
+              <img
+                class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                src="/assets/biba1.png"
+              />
+              <div class="subline-text">
+                <p class="">Exclusive</p>
+              </div>
+              <div class="leka">
+                <img src="/assets/Layer 3.png" alt="" />
+                <img class="ml-5 mr-5" src="/assets/Vector (2).png" alt="" />
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mt-5">Biba</h3>
+              <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+              <p class="mt-2 text-gray-600">
+                Get up to 5% OFF on all-natural pregnancy skincare products for
+                sensitive skins.
+              </p>
+            </div>
+            <div class="flex card-btn mt-4">
+              <button
+                class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                Show Coupon
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                YourDiscount20
+              </button>
+            </div>
+            <p class="text-red-600 font-semibold text-center">End in 5 Days</p>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="max-w-md py-4 px-8 bg-white drop-shadow-2xl rounded-lg mb-10 "
+          >
+            <div class="flex -mt-10">
+              <img
+                class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                src="/assets/swigy.png"
+              />
+              <div class="subline-text">
+                <p class="">Festival Sale</p>
+              </div>
+              <div class="leka">
+                <img src="/assets/Layer 3.png" alt="" />
+                <img class="ml-5 mr-5" src="/assets/Vector (2).png" alt="" />
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mt-5">Swiggy</h3>
+              <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+              <p class="mt-2 text-gray-600">
+                Get up to 5% OFF on all-natural pregnancy skincare products for
+                sensitive skins.
+              </p>
+            </div>
+            <div class="flex card-btn mt-4 ">
+              <button
+                class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                Show Coupon
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                YourDiscount20
+              </button>
+            </div>
+            <p class="text-red-600 font-semibold text-center ">End in 5 Days</p>
+          </div>
+        </div>
+        <button
+          class="btn block mx-auto w-1/3 py-2 font-semibold sm:mt-10 text-gray-500 bg-gray-100 rounded-full text-center"
+        >
+          SEE MORE
+        </button>
+      </div>
+
+      <!-- Exclusive Coupons & Deals -->
+      <div class="container mt-32 mx-auto">
+        <div id="exclusive_coupons">
+          <div class="section-heading flex justify-between">
+            <h3>Exclusive Coupons & Deals</h3>
+            <div class="flex mt-2">
+              <div class="show-btn">
+                <p>See more</p>
+              </div>
+              <div class="offer-btn">
+                <p class="mr-15">Best Offers</p>
+              </div>
+              <div class="flter-1">
+                <img class="mt-1" src="/assets/Group 350.png" alt="" />
+              </div>
+              <p class="filter">Filter</p>
+            </div>
+          </div>
+          <!-- card section -->
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 mx-auto mt-20">
+            <!-- card 1 -->
+            <div class="max-w-md bg-white drop-shadow-2xl rounded-lg mb-10">
+              <div class="card-header text-right">
+                <div class="card-banner">
+                  <img src="/assets/Mask Group.png" class="w-full" alt="" />
+                </div>
+                <div class="subline-text1">
+                  <p class="">Editors Choice</p>
+                </div>
+              </div>
+              <div class="card-body py-4 px-8">
+                <div class="flex justify-beetwen -mt-10">
+                  <img
+                    class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                    src="/assets/metr.png"
+                  />
+
+                  <div class="leka">
+                    <img src="/assets/Layer 3.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mt-5">Myntra</h3>
+                  <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+                  <p class="mt-2 text-gray-600">
+                    Get up to 5% OFF on all-natural pregnancy skincare products
+                    for sensitive skins.
+                  </p>
+                </div>
+                <div class="flex card-btn mt-4">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Show Coupon
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    YourDiscount20
+                  </button>
+                </div>
+                <p class="text-red-600 font-semibold text-center">
+                  End in 5 Days
+                </p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="max-w-md bg-white drop-shadow-2xl rounded-lg mb-10">
+              <div class="card-header text-right">
+                <div class="card-banner">
+                  <img src="/assets/Mask Group (1).png" class="w-full" alt="" />
+                </div>
+                <div class="subline-text1">
+                  <p class="">Festival Sale</p>
+                </div>
+              </div>
+              <div class="card-body py-4 px-8">
+                <div class="flex justify-beetwen -mt-10">
+                  <img
+                    class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                    src="/assets/amazonlogo.png"
+                  />
+
+                  <div class="leka">
+                    <img src="/assets/Layer 3.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mt-5">Amazon</h3>
+                  <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+                  <p class="mt-2 text-gray-600">
+                    Get up to 5% OFF on all-natural pregnancy skincare products
+                    for sensitive skins.
+                  </p>
+                </div>
+                <div class="flex card-btn mt-4">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Show Coupon
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    YourDiscount20
+                  </button>
+                </div>
+                <p class="text-red-600 font-semibold text-center">
+                  End in 5 Days
+                </p>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="max-w-md bg-white drop-shadow-2xl rounded-lg mb-10">
+              <div class="card-header text-right">
+                <div class="card-banner">
+                  <img src="/assets/Mask Group (2).png" class="w-full" alt="" />
+                </div>
+                <div class="subline-text1">
+                  <p class="">Black Friday Sale</p>
+                </div>
+              </div>
+              <div class="card-body py-4 px-8">
+                <div class="flex justify-beetwen -mt-10">
+                  <img
+                    class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                    src="/assets/flipcart.png"
+                  />
+
+                  <div class="leka">
+                    <img src="/assets/Layer 3.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mt-5">Flipkart</h3>
+                  <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+                  <p class="mt-2 text-gray-600">
+                    Get up to 5% OFF on all-natural pregnancy skincare products
+                    for sensitive skins.
+                  </p>
+                </div>
+                <div class="flex card-btn mt-4">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Show Coupon
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    YourDiscount20
+                  </button>
+                </div>
+                <p class="text-red-600 font-semibold text-center">
+                  End in 5 Days
+                </p>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="max-w-md bg-white drop-shadow-2xl rounded-lg mb-10">
+              <div class="card-header text-right">
+                <div class="card-banner">
+                  <img src="/assets/Mask Group (3).png" class="w-full" alt="" />
+                </div>
+                <div class="subline-text1">
+                  <p class="">Exclusive</p>
+                </div>
+              </div>
+              <div class="card-body py-4 px-8">
+                <div class="flex justify-beetwen -mt-10">
+                  <img
+                    class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                    src="/assets/mama.png"
+                  />
+
+                  <div class="leka">
+                    <img src="/assets/Layer 3.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mt-5">Mamaearth</h3>
+                  <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+                  <p class="mt-2 text-gray-600">
+                    Get up to 5% OFF on all-natural pregnancy skincare products
+                    for sensitive skins.
+                  </p>
+                </div>
+                <div class="flex card-btn mt-4">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Show Coupon
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    YourDiscount20
+                  </button>
+                </div>
+                <p class="text-red-600 font-semibold text-center">
+                  End in 5 Days
+                </p>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="max-w-md bg-white drop-shadow-2xl rounded-lg mb-10">
+              <div class="card-header text-right">
+                <div class="card-banner">
+                  <img src="/assets/Mask Group (4).png" class="w-full" alt="" />
+                </div>
+                <div class="subline-text1">
+                  <p class="">Editors Choice</p>
+                </div>
+              </div>
+              <div class="card-body py-4 px-8">
+                <div class="flex justify-beetwen -mt-10">
+                  <img
+                    class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                    src="/assets/herb.png"
+                  />
+
+                  <div class="leka">
+                    <img src="/assets/Layer 3.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mt-5">iHerb</h3>
+                  <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+                  <p class="mt-2 text-gray-600">
+                    Get up to 5% OFF on all-natural pregnancy skincare products
+                    for sensitive skins.
+                  </p>
+                </div>
+                <div class="flex card-btn mt-4">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Show Coupon
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    YourDiscount20
+                  </button>
+                </div>
+                <p class="text-red-600 font-semibold text-center">
+                  End in 5 Days
+                </p>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="max-w-md bg-white drop-shadow-2xl rounded-lg mb-10">
+              <div class="card-header text-right">
+                <div class="card-banner">
+                  <img src="/assets/Mask Group (5).png" class="w-full" alt="" />
+                </div>
+                <div class="subline-text1">
+                  <p class="">Festival Sale</p>
+                </div>
+              </div>
+              <div class="card-body py-4 px-8">
+                <div class="flex justify-beetwen -mt-10">
+                  <img
+                    class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                    src="/assets/bodyshop.png"
+                  />
+
+                  <div class="leka">
+                    <img src="/assets/Layer 3.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mt-5">The Body Shop</h3>
+                  <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+                  <p class="mt-2 text-gray-600">
+                    Get up to 5% OFF on all-natural pregnancy skincare products
+                    for sensitive skins.
+                  </p>
+                </div>
+                <div class="flex card-btn mt-4">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Show Coupon
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    YourDiscount20
+                  </button>
+                </div>
+                <p class="text-red-600 font-semibold text-center">
+                  End in 5 Days
+                </p>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <div class="max-w-md bg-white drop-shadow-2xl rounded-lg mb-10">
+              <div class="card-header text-right">
+                <div class="card-banner">
+                  <img src="/assets/Mask Group (6).png" class="w-full" alt="" />
+                </div>
+                <div class="subline-text1">
+                  <p class="">Black Friday Sale</p>
+                </div>
+              </div>
+              <div class="card-body py-4 px-8">
+                <div class="flex justify-beetwen -mt-10">
+                  <img
+                    class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                    src="/assets/biba1.png"
+                  />
+
+                  <div class="leka">
+                    <img src="/assets/Layer 3.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mt-5">Biba</h3>
+                  <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+                  <p class="mt-2 text-gray-600">
+                    Get up to 5% OFF on all-natural pregnancy skincare products
+                    for sensitive skins.
+                  </p>
+                </div>
+                <div class="flex card-btn mt-4">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Show Coupon
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    YourDiscount20
+                  </button>
+                </div>
+                <p class="text-red-600 font-semibold text-center">
+                  End in 5 Days
+                </p>
+              </div>
+            </div>
+            <!-- card 8 -->
+            <div class="max-w-md bg-white drop-shadow-2xl rounded-lg mb-10">
+              <div class="card-header text-right">
+                <div class="card-banner">
+                  <img src="/assets/Mask Group (7).png" class="w-full" alt="" />
+                </div>
+                <div class="subline-text1">
+                  <p class="">Black Friday Sale</p>
+                </div>
+              </div>
+              <div class="card-body py-4 px-8">
+                <div class="flex justify-beetwen -mt-10">
+                  <img
+                    class="w-20 h-20 object-cover rounded-full border-2 border-gray-200"
+                    src="/assets/swigy.png"
+                  />
+
+                  <div class="leka">
+                    <img src="/assets/Layer 3.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mt-5">Swiggy</h3>
+                  <h2 class="text-2xl font-semibold">40% Off on Jacket</h2>
+                  <p class="mt-2 text-gray-600">
+                    Get up to 5% OFF on all-natural pregnancy skincare products
+                    for sensitive skins.
+                  </p>
+                </div>
+                <div class="flex card-btn mt-4">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    Show Coupon
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    YourDiscount20
+                  </button>
+                </div>
+                <p class="text-red-600 font-semibold text-center">
+                  End in 5 Days
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn block mx-auto w-1/3 py-2 font-semibold text-gray-500 bg-gray-100 rounded-full text-center"
+          >
+            SEE MORE
+          </button>
+        </div>
+      </div>
+
+      <!-- Latest Sales -->
+      <div id="latest-sales">
+        <div class="container mx-auto">
+          <h3 class="font-black text-2xl mb-8">Latest Sales</h3>
+          <div class="latest-card-section">
+            <div class="grid lg:grid-cols-5 grid-rows-1 gap-3 col-cols-1">
+              <!-- card 1 -->
+              <div
+                class="latest-card max-w-md bg-white drop-shadow-2xl rounded-lg mb-5"
+              >
+                <div class="latest-top">
+                  <img class="w-full" src="/assets/Rectangle 1292.png" alt="" />
+                </div>
+                <div class="latest-logo">
+                  <img src="/assets/amazonlogo.png" alt="" />
+                </div>
+                <div class="latest-body border-b p-3">
+                  <p class="font-medium">
+                    20% Off Your Next Purchase With Old Navy Email Sign Up
+                  </p>
+                </div>
+                <div class="latest-footer py-3 flex">
+                  <img src="/assets/Vector (3).png" alt="" />
+                  <p>End in 5 Days</p>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div
+                class="latest-card max-w-md bg-white drop-shadow-2xl rounded-lg mb-5"
+              >
+                <div class="latest-top">
+                  <img class="w-full" src="/assets/Rectangle 1294.png" alt="" />
+                </div>
+                <div class="latest-logo">
+                  <img src="/assets/metr.png" alt="" />
+                </div>
+                <div class="latest-body border-b p-3">
+                  <p class="font-medium">
+                    20% Off Your Next Purchase With Old Navy Email Sign Up
+                  </p>
+                </div>
+                <div class="latest-footer py-3 flex">
+                  <img src="/assets/Vector (3).png" alt="" />
+                  <p>End in 5 Days</p>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div
+                class="latest-card max-w-md bg-white drop-shadow-2xl rounded-lg mb-5"
+              >
+                <div class="latest-top">
+                  <img class="w-full" src="/assets/Rectangle 1296.png" alt="" />
+                </div>
+                <div class="latest-logo">
+                  <img src="/assets/mama.png" alt="" />
+                </div>
+                <div class="latest-body border-b p-3">
+                  <p class="font-medium">
+                    20% Off Your Next Purchase With Old Navy Email Sign Up
+                  </p>
+                </div>
+                <div class="latest-footer py-3 flex">
+                  <img src="/assets/Vector (3).png" alt="" />
+                  <p>End in 5 Days</p>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div
+                class="latest-card max-w-md bg-white drop-shadow-2xl rounded-lg mb-5"
+              >
+                <div class="latest-top">
+                  <img class="w-full" src="/assets/Rectangle 1298.png" alt="" />
+                </div>
+                <div class="latest-logo">
+                  <img src="/assets/flipcart.png" alt="" />
+                </div>
+                <div class="latest-body border-b p-3">
+                  <p class="font-medium">
+                    20% Off Your Next Purchase With Old Navy Email Sign Up
+                  </p>
+                </div>
+                <div class="latest-footer py-3 flex">
+                  <img src="/assets/Vector (3).png" alt="" />
+                  <p>End in 5 Days</p>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div
+                class="latest-card max-w-md bg-white drop-shadow-2xl rounded-lg mb-5"
+              >
+                <div class="latest-top">
+                  <img class="w-full" src="/assets/Rectangle 1294.png" alt="" />
+                </div>
+                <div class="latest-logo">
+                  <img src="/assets/metr.png" alt="" />
+                </div>
+                <div class="latest-body border-b p-3">
+                  <p class="font-medium">
+                    20% Off Your Next Purchase With Old Navy Email Sign Up
+                  </p>
+                </div>
+                <div class="latest-footer py-3 flex">
+                  <img src="/assets/Vector (3).png" alt="" />
+                  <p>End in 5 Days</p>
+                </div>
+              </div>
+              <div class="sidearrow-1">
+                <img src="/assets/sidearrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="flex mb-5">
+            <div class="rounded pb-1 w-1/4 bg-black"></div>
+            <div class="rounded pb-1 w-3/4 bg-gray-300"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Popular Stores -->
+      <div id="popular-stores">
+        <div class="container mx-auto">
+          <div class="popular-heading flex justify-between">
+            <h3 class="font-bold text-2xl">Popular Stores</h3>
+            <p
+              class="font-semibold p-1 px-8 rounded-full border-2 border-gray-400 text-sm"
+            >
+              See more
+            </p>
+          </div>
+          <div class="grid my-8 grid-rows-3 lg:grid-cols-5 grid-cols-1 gap-3">
+            <!-- store box 1 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/metr.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Myntra</h3>
+                <p class="text-rose-600 font-semibold">09 offers</p>
+              </div>
+            </div>
+            <!-- store box 2 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/Group 3.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Jabong</h3>
+                <p class="text-rose-600 font-semibold">07 offers</p>
+              </div>
+            </div>
+            <!-- store box 3 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/Group 4.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Pharm Easy</h3>
+                <p class="text-rose-600 font-semibold">5 offers</p>
+              </div>
+            </div>
+            <!-- store box 4 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/mama.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">MamaEarth</h3>
+                <p class="text-rose-600 font-semibold">19 offers</p>
+              </div>
+            </div>
+            <!-- store box 5 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/Group 5.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Dominos Pizza</h3>
+                <p class="text-rose-600 font-semibold">5 offers</p>
+              </div>
+            </div>
+            <!-- store box 6 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/swigy.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Swiggy</h3>
+                <p class="text-rose-600 font-semibold">5 offers</p>
+              </div>
+            </div>
+            <!-- store box 7 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/Group 6.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Ajio</h3>
+                <p class="text-rose-600 font-semibold">19 offers</p>
+              </div>
+            </div>
+            <!-- store box 8 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/Group 7.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Samsung</h3>
+                <p class="text-rose-600 font-semibold">23 offers</p>
+              </div>
+            </div>
+            <!-- store box 9 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/Group 8.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">The Moms Co</h3>
+                <p class="text-rose-600 font-semibold">14 offers</p>
+              </div>
+            </div>
+            <!-- store box 10 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/biba1.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Biba</h3>
+                <p class="text-rose-600 font-semibold">23 offers</p>
+              </div>
+            </div>
+            <!-- store box 11 -->
+            <div class="shadow-lg py-4 flex">
+              <img
+                class="ml-4"
+                width="57px"
+                src="/assets/amazonlogo.png"
+                alt=""
+              />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Amazon</h3>
+                <p class="text-rose-600 font-semibold">15 offers</p>
+              </div>
+            </div>
+            <!-- store box 12 -->
+            <div class="shadow-lg py-4 flex">
+              <img class="ml-4" width="57px" src="/assets/Group 9.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Peter Englands</h3>
+                <p class="text-rose-600 font-semibold">14 offers</p>
+              </div>
+            </div>
+            <!-- store box 13 -->
+            <div class="shadow-lg py-4 flex">
+              <img
+                class="ml-4"
+                width="57px"
+                src="/assets/flipcart.png"
+                alt=""
+              />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Flipkart</h3>
+                <p class="text-rose-600 font-semibold">13 offers</p>
+              </div>
+            </div>
+            <!-- store box 14 -->
+            <div class="shadow-lg py-4 flex">
+              <img
+                class="ml-4"
+                width="57px"
+                src="/assets/Group 10.png"
+                alt=""
+              />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">Saffola</h3>
+                <p class="text-rose-600 font-semibold">17 offers</p>
+              </div>
+            </div>
+            <!-- store box 15 -->
+            <div class="shadow-lg py-4 flex">
+              <img
+                class="ml-4"
+                width="57px"
+                src="/assets/bodyshop.png"
+                alt=""
+              />
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold">The Body Shop</h3>
+                <p class="text-rose-600 font-semibold">13 offers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Shopping Guides -->
+      <div id="shopping-guides">
+        <div class="container mx-auto">
+          <div class="popular-heading flex justify-between">
+            <h3 class="font-bold text-2xl">Shopping Guides</h3>
+            <p
+              class="font-semibold p-1 px-8 rounded-full border-2 border-gray-400 text-sm"
+            >
+              See more
+            </p>
+          </div>
+
+          <div class="grid grid-row-2 lg:grid-cols-4 grid-cols-1 mb-0 mt-8">
+            <div class="first-box row-span-2 col-span-2">
+              <img src="/assets/Group 21.png" alt="" />
+            </div>
+            <div class="guides-box sm:cols-span-2 border-2">
+              <img src="/assets/Group 22.png" alt="" />
+              <div class="p-2">
+                <p class="text-sm font-bold mt-1">BEAUTY & PERSONAL CARE</p>
+                <h3 class="text-2xl font-semibold">
+                  Here’s Exactly <br />
+                  What Happens to Your Face When You’re Stressed
+                </h3>
+                <p class="border-t-2 inline-block font-semibold pb-1">
+                  BY LOREN ISPUM
+                </p>
+              </div>
+            </div>
+            <div class="guides-box sm:grid-cols-1 border-2">
+              <img src="/assets/Group 23.png" alt="" />
+              <div class="p-2">
+                <p class="text-sm font-bold mt-1">ELECTRONIC</p>
+                <h3 class="text-2xl font-semibold">
+                  Apple has tight control over states' digital ID cards
+                </h3>
+                <p class="border-t-2 inline-block font-semibold pb-1">
+                  BY LOREN ISPUM
+                </p>
+              </div>
+            </div>
+
+            <div class="guides-box-3 col-span-2 row-span-2 mt-3">
+              <img src="/assets/Group 24.png" alt="" />
+              <div class="p-2">
+                <p class="text-sm font-bold mt-1">ELECTRONIC</p>
+                <h3 class="text-2xl font-semibold">
+                  Apple has tight control over states' digital ID cards
+                </h3>
+                <p class="border-t-2 inline-block font-semibold pb-1">
+                  BY LOREN ISPUM
+                </p>
+              </div>
+              <button class="w-full border-2 rounded-full py-1">
+                see more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Popular Categories -->
+      <div id="popular-categories">
+        <div class="container mx-auto">
+          <div class="popular-heading flex justify-between">
+            <h3 class="font-bold text-2xl">Popular Categories</h3>
+            <p
+              class="font-semibold p-1 px-8 rounded-full border-2 border-gray-400 text-sm"
+            >
+              See more
+            </p>
+          </div>
+          <div class="category-menu mt-8">
+            <ul>
+              <li>Womens Fashion & Accessories</li>
+              <li>Beauty & Personal Care</li>
+              <li>Sports & Fitness</li>
+              <li>Decor & Furniture</li>
+              <li>Health & Nutrition</li>
+              <li>Eletronics</li>
+              <li>Home Kitchen & Appliances</li>
+            </ul>
+          </div>
+
+          <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="shadow py-5">
+              <div class="grid lg:grid-cols-2 gap-1 grid-cols-1">
+                <img class="row-span-2" src="/assets/Group 25.png" alt="" />
+                <img class="cat-1" src="/assets/Group 26.png" alt="" />
+                <img class="cat-1" src="/assets/Group 26.png" alt="" />
+              </div>
+            </div>
+            <div>
+              <div class="border-b-2 p-2 py-5 flex justify-between cat-2 items-center">
+                <div>
+                  <img src="/assets/Group 28.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Ikea</h3>
+                  <p class="text-xs font-bold">
+                    Enjoy everyday savings for all your office and <br />
+                    school supply needs
+                  </p>
+                </div>
+                <div class="cat">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    View Offers
+                  </button>
+                </div>
+              </div>
+              <div class="border-b-2 p-2 py-5 flex justify-between cat-2 items-center">
+                <div>
+                  <img src="/assets/myntra 30.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Pepperfry</h3>
+                  <p class="text-xs font-bold">
+                    Enjoy everyday savings for all your office and <br />
+                    school supply needs
+                  </p>
+                </div>
+                <div class="cat">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    View Offers
+                  </button>
+                </div>
+              </div>
+              <div class="border-b-2 p-2 py-5 flex justify-between cat-2 items-center">
+                <div>
+                  <img src="/assets/Group 29.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Urban Ladder</h3>
+                  <p class="text-xs font-bold">
+                    Enjoy everyday savings for all your office and <br />
+                    school supply needs
+                  </p>
+                </div>
+                <div class="cat">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    View Offers
+                  </button>
+                </div>
+              </div>
+              <div class="border-b-2 p-2 py-5 flex justify-between cat-2 items-center">
+                <div>
+                  <img src="/assets/Group 30.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Fab Furnish</h3>
+                  <p class="text-xs font-bold">
+                    Enjoy everyday savings for all your office and <br />
+                    school supply needs
+                  </p>
+                </div>
+                <div class="cat">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    View Offers
+                  </button>
+                </div>
+              </div>
+              <div class="border-b-2 p-2 py-5 flex justify-between cat-2 items-center">
+                <div>
+                  <img src="/assets/Group 31.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Godrej</h3>
+                  <p class="text-xs font-bold">
+                    Enjoy everyday savings for all your office and <br />
+                    school supply needs
+                  </p>
+                </div>
+                <div class="cat">
+                  <button
+                    class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                  >
+                    View Offers
+                  </button>
+                </div>
+              </div>
+              <button class="w-full border-2 rounded-full py-1 mt-4">
+                see more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-200 pb-1 border-b-2 my-5"></div>
+
+      <!-- view text section -->
+      <div id="view-text-section">
+        <div class="container mx-auto">
+          <div class="view-text-box p-10 sm:mx-auto my-5 border">
+            <h3 class="text-xl font-semibold">
+              Wide Range of Products at Myntra
+            </h3>
+            <p class="text-xs text-gray-400 mt-2">
+              Talk about exceptionality and you have Amazon AE, at Asaan, for
+              you. They open your doors towards increasing possibilities, by
+              connecting people and their online products. Dealing in men’s and
+              women’s fashion wear, bags, shoes, watches, eyewear, accessories,
+              and jewelry, they are one of the finest options among the online
+              marketplaces. Their prices are unbeatable and the range offered,
+              without equal. So, hold tight and explore the Amazon Coupon Code.
+              Trust us, you’ll only want more. Shopping Latest Trends with
+              Amazon UAE Coupon Code The Amazon UAE Fashion Store is one of the
+              most sought-after online stores that consider the user who has a
+              special taste for class. Guided by the brilliant innovation, they
+              have composed their store to be staggeringly helpful for their
+              users by giving them the ability to shop as they can. Trusted by
+              many users, Amazon is quickly developing and making real changes
+              in the realm of design.
+            </p>
+            <h3 class="text-xl font-semibold mt-8">
+              Wide Range of Products at Myntra
+            </h3>
+            <p class="text-xs text-gray-400 mt-2">
+              Talk about exceptionality and you have Amazon AE, at Asaan, for
+              you. They open your doors towards increasing possibilities, by
+              connecting people and their online products. Dealing in men’s and
+              women’s fashion wear, bags, shoes, watches, eyewear, accessories,
+              and jewelry, they are one of the finest options among the online
+              marketplaces. Their prices are unbeatable and the range offered,
+              without equal. So, hold tight and explore the Amazon Coupon Code.
+              Trust us, you’ll only want more. Shopping Latest Trends with
+              Amazon UAE Coupon Code The Amazon UAE Fashion Store is one of the
+              most sought-after online stores that consider the user who has a
+              special taste for class. Guided by the brilliant innovation, they
+              have composed their store to be staggeringly helpful for their
+              users by giving them the ability to shop as they can. Trusted by
+              many users, Amazon is quickly developing and making real changes
+              in the realm of design.
+            </p>
+            <div class="text-readmore mx-auto text-center sm:text-center mt-8">
+              <p class="text-base fonr-semibold">Read More</p>
+              <img class="block mx-auto" src="/assets/Vector (4).png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </main>
+    <footer>
+       <!-- footer -->
+       <div id="footer">
+        <div class="container mx-auto">
+          <div class="footer-box">
+            <div class="flex justify-between lg:flex-row flex-col">
+              <div class="footer-left w-1/2">
+                <img width="110px" src="/assets/navlogo.png" alt="" />
+                <p class="text-white">
+                  Asaan is reader-supported. When you buy something using a link
+                  on this site,<br />
+                  we may earn a small commission. This will not incur additional
+                  cost to you.
+                </p>
+                <div class="footer-icon">
+
+                  <!-- <img  src="/assets/Group 32.png" alt=""> -->
+                  <div class="flex">
+                     <div class="iconss">
+                       <img src="/assets/instagram (1).png" alt="">
+                     </div>
+                     <div class="iconss">
+                      <img src="/assets/facebook.png" alt="">
+                    </div>
+                     <div class="iconss">
+                      <img src="/assets/Twitter.png" alt="">
+                    </div>
+                     <div class="iconss">
+                      <img src="/assets/Linkedin.png" alt="">
+                    </div>
+                     <div class="iconss">
+                      <img src="/assets/Youtube (1).png" alt="">
+                    </div>
+                     <div class="iconss">
+                      <img src="/assets/Pinterest.png" alt="">
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="footer-right text-white">
+                <div class="flex right-1">
+                  <div class="mr-8">
+                    <ul>
+                      <li>Browse Sections</li>
+                      <li>Home</li>
+                      <li>Guides</li>
+                      <li>Travel</li>
+                      <li>Tags</li>
+                      <li>Our Writers</li>
+                      <li>Stores Categories</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>  
+                      <li>Information</li>
+                      <li> Sitemap</li>
+                      <li> About Us</li>
+                      <li> Careers</li>
+                      <li>Contact Us</li>
+                      <li>Privacy</li>
+                      <li>Conditions</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                <div class="mt-6 mr-auto ">
+                  <img class="block lg:ml-auto mx-auto" src="/assets/Group 201.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- news letter-box -->
+      <div id="news-letter">
+         <div class="container mx-auto text-center">
+               <p class="text-white">Subscribe to get hand-picked deals direct to your inbox</p>
+               <input type="email" placeholder="Enter your email">
+               <button>Subscribe</button>
+         </div>
+      </div>
+    </footer>
+  </body>
+</html>

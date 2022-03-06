@@ -1,0 +1,54 @@
+.scnd-nav {
+  margin: auto;
+  img {
+    width: 23px;
+    height: 23px;
+  }
+  img:nth-child(8) {
+    width: 8px;
+    height: 4px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .nav-arrow {
+    width: 8px !important;
+    height: 4px !important;
+  }
+}
+.row-img {
+  height: 87%;
+}
+.electronics{
+  margin-top: -9%;
+}
+.Categories{
+  margin-top: -9%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+        .scnd-nav{
+          display: none;
+        }
+        .guide-storis-1{
+            display: none;
+        }
+        .must-read{
+          img{
+            width: 100%;
+          }
+        }
+        .electronics{
+          margin-top: 9%;
+          img{
+            width: 100%;
+          }
+        }
+        .Categories{
+          img{
+            width: 100%;
+          }
+          margin-top: 9%;
+        }
+}

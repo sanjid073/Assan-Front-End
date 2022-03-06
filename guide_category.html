@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="SCSS/style.css" />
+    <title>guide category</title>
+  </head>
+  <body >
+    <header>
+      <!-- intro -->
+      <div class="intro-1 text-center p-2">
+        <p>
+          <span
+            >Buying Guides : Lets help you choose whats best for your
+            needs.</span
+          >There are high-end brands with basics in their collection, but they
+          also have spring, summer, fall, and winter collections. We thought
+          “what if we don’t follow the fashion
+        </p>
+      </div>
+      <!-- navbar -->
+
+      <nav
+        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 border-b-2 rounded"
+        id="navbar"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="/assets/navIcon.png"
+              class="mr-3 h-6 sm:h-10 icon"
+              alt="Flowbite Logo"
+            />
+            <p class="self-center text-xl font-semibold whitespace-nowrap">
+              Stores
+            </p>
+          </a>
+          <a href="#" class="flex items-center nav-categories">
+            <img
+              src="/assets/navIcon2.png"
+              class="mr-3 h-6 sm:h-10 icon"
+              alt="Flowbite Logo"
+            />
+            <p class="self-center text-xl font-semibold whitespace-nowrap">
+              Categories
+            </p>
+          </a>
+          <div class="flex md:order-2">
+            <div class="hidden relative mr-3 md:mr-0 md:block">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-dark"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="email-adress-icon"
+                class="block p-2 pl-10"
+                placeholder="Search..."
+              />
+              <div
+                class="flex absolute inset-y-0 right-3 items-center pointer-events-none"
+              >
+                <span>Category</span>
+                <svg
+                  viewBox="0 0 32 32"
+                  class="icon icon-chevron-bottom"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16.003 18.626l7.081-7.081L25 13.46l-8.997 8.998-9.003-9 1.917-1.916z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <button
+              data-collapse-toggle="mobile-menu-3"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-3"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex md:order-3 lang">
+            <div class="relative mr-3 md:mr-0 md:block">
+              <div
+                class="flex absolute inset-y-0 right-2 items-center pointer-events-none"
+              >
+                <img src="/assets/india.png" alt="" />
+                <span class="font-medium">EN</span>
+                <img src="/assets/navIcon3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden justify-center nav-logo items-center w-full md:flex md:w-auto md:order-1"
+            id="mobile-menu-3"
+          >
+            <img width="147px" height="48px" src="/assets/navlogo.png" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <section>
+        <div class="scnd-nav py-2 bg-white">
+          <div class="container mx-auto">
+            <div class="grid lg:grid-cols-8 grid-cols-3">
+              <div class="flex items-center">
+                <img src="/assets/Group 57.png" alt="" />
+                <p class="font-semibold ml-1">Electronics</p>
+              </div>
+              <div class="flex">
+                <img src="/assets/Group 365.png" alt="" />
+                <p class="font-semibold ml-1">Decor & Furniture</p>
+              </div>
+              <div class="flex">
+                <img src="/assets/Group 366.png" alt="" />
+                <p class="font-semibold ml-1">Sports & fitness</p>
+              </div>
+              <div class="flex items-center">
+                <img src="/assets/Group 367.png" alt="" />
+                <p class="font-semibold ml-1">Sports & fitness</p>
+              </div>
+              <div class="flex items-center">
+                <img src="/assets/Group 369.png" alt="" />
+                <p class="font-semibold ml-1">Mens Fashion</p>
+              </div>
+              <div class="flex items-center">
+                <img src="/assets/Group 370.png" alt="" />
+                <p class="font-semibold ml-1">Home & Kitchen</p>
+              </div>
+              <div class="flex items-center">
+                <img src="/assets/Group 371.png" alt="" />
+                <p class="font-semibold ml-1">Womens Fashion</p>
+              </div>
+              <div class="flex items-center">
+                <p class="font-semibold">See More</p>
+                <img class="nav-arrow" src="/assets/Vector 138.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="container mx-auto">
+        <p class="font-semibold mt-3">Asaan / Guide / Decor & Furniture</p>
+      </div>
+      <div class="intro-box mt-3">
+        <div class="container mx-auto">
+          <h3 class="text-white py-1 text-3xl font-bold">Decor & Furniture</h3>
+          <p class="text-white text-sm">
+            There are high-end brands with basics in their collection, but they
+            also have spring, summer, fall, and winter collections. We thought
+            “what if we don’t follow the fashion system by season, but deliver
+            by <strong>Read More</strong>
+          </p>
+        </div>
+      </div>
+
+      <section class="mt-4">
+        <div id="guide-category-page">
+          <div class="container mx-auto">
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 mx-auto">
+              <!-- left -->
+              <div class="shadow-lg lg:col-span-2 py-4 rounded  w-full">
+                <div >
+                  <img class="w-full" src="/assets/Group 375.png" alt="" />
+                  <p class="text-sm mt-3 font-semibold">DECOR & FURNITURE</p>
+                  <h3 class="text-2xl font-bold mt-2">
+                    A wall of wardrobes helps maximise your storage and <br />
+                    create lots of room to get organised.
+                  </h3>
+                  <p class="text-lg mt-6 border-t border-black inline-block">
+                    BY LOREN ISPUM
+                  </p>
+                </div>
+                <!-- box 2-->
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-12">
+                  <div >
+                    <img class="w-full" src="/assets/Group 376.png" alt="" />
+                    <p class="text-sm mt-3 font-semibold">DECOR & FURNITURE</p>
+                    <h3 class="text-2xl font-bold mt-2">
+                      Getting started with composting is easy with this bin
+                    </h3>
+                    <p class="text-lg mt-4 border-t border-black inline-block">
+                      BY LOREN ISPUM
+                    </p>
+                  </div>
+                  <div>
+                    <img class="w-full" src="/assets/Group 376.png" alt="" />
+                    <p class="text-sm mt-3 font-semibold">DECOR & FURNITURE</p>
+                    <h3 class="text-2xl font-bold mt-2">
+                      Getting started with composting is easy with this bin
+                    </h3>
+                    <p class="text-lg mt-4 border-t border-black inline-block">
+                      BY LOREN ISPUM
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="Relevant-Guides border flex lg:flex-row rounded items-center mt-5 flex-col"
+                >
+                  <img
+                    class="h-full"
+                    src="/assets/Mask Group (11).png"
+                    alt=""
+                  />
+                  <div class="ml-4 mt-8">
+                    <p class="text-sm font-semibold">DECOR & FURNITURE</p>
+                    <h3 class="font-bold text-2xl">
+                      The Future Perfect is a platform for <br />
+                      distinguished and emerging contemporary designers.
+                    </h3>
+                    <p class="text-sm text-gray-400 mt-1">
+                      "These makeup tutorials remind me that I, too, can reclaim
+                      control of certain parts of my life.”
+                    </p>
+                    <p class="text-lg mt-2 border-t border-black inline-block">
+                      BY LOREN ISPUM
+                    </p>
+                    <p class="top-read-1 pb-1">3 min read</p>
+                  </div>
+                </div>
+                <div
+                  class="Relevant-Guides border flex lg:flex-row rounded items-center mt-5 flex-col"
+                >
+                  <img
+                    class="h-full"
+                    src="/assets/Mask Group (11).png"
+                    alt=""
+                  />
+                  <div class="ml-4 mt-8">
+                    <p class="text-sm font-semibold">DECOR & FURNITURE</p>
+                    <h3 class="font-bold text-2xl">
+                      The Future Perfect is a platform for <br />
+                      distinguished and emerging contemporary designers.
+                    </h3>
+                    <p class="text-sm text-gray-400 mt-1">
+                      "These makeup tutorials remind me that I, too, can reclaim
+                      control of certain parts of my life.”
+                    </p>
+                    <p class="text-lg mt-2 border-t border-black inline-block">
+                      BY LOREN ISPUM
+                    </p>
+                    <p class="top-read-1 pb-1">3 min read</p>
+                  </div>
+                </div>
+                <div
+                  class="Relevant-Guides border flex lg:flex-row rounded items-center mt-5 flex-col"
+                >
+                  <img
+                    class="h-full"
+                    src="/assets/Mask Group (11).png"
+                    alt=""
+                  />
+                  <div class="ml-4 mt-8">
+                    <p class="text-sm font-semibold">DECOR & FURNITURE</p>
+                    <h3 class="font-bold text-2xl">
+                      The Future Perfect is a platform for <br />
+                      distinguished and emerging contemporary designers.
+                    </h3>
+                    <p class="text-sm text-gray-400 mt-1">
+                      "These makeup tutorials remind me that I, too, can reclaim
+                      control of certain parts of my life.”
+                    </p>
+                    <p class="text-lg mt-2 border-t border-black inline-block">
+                      BY LOREN ISPUM
+                    </p>
+                    <p class="top-read-1 pb-1">3 min read</p>
+                  </div>
+                </div>
+                <div
+                  class="Relevant-Guides mt-10 border flex lg:flex-row rounded items-center flex-col"
+                >
+                  <img
+                    class="h-full"
+                    src="/assets/Mask Group (11).png"
+                    alt=""
+                  />
+                  <div class="ml-4 mt-8">
+                    <p class="text-sm font-semibold">DECOR & FURNITURE</p>
+                    <h3 class="font-bold text-2xl">
+                      The Future Perfect is a platform for <br />
+                      distinguished and emerging contemporary designers.
+                    </h3>
+                    <p class="text-sm text-gray-400 mt-1">
+                      "These makeup tutorials remind me that I, too, can reclaim
+                      control of certain parts of my life.”
+                    </p>
+                    <p class="text-lg mt-2 border-t border-black inline-block">
+                      BY LOREN ISPUM
+                    </p>
+                    <p class="top-read-1 pb-1">3 min read</p>
+                  </div>
+                </div>
+                <div
+                  class="Relevant-Guides mt-10 border flex lg:flex-row rounded items-center flex-col"
+                >
+                  <img
+                    class="h-full"
+                    src="/assets/Mask Group (11).png"
+                    alt=""
+                  />
+                  <div class="ml-4 mt-8">
+                    <p class="text-sm font-semibold">DECOR & FURNITURE</p>
+                    <h3 class="font-bold text-2xl">
+                      The Future Perfect is a platform for <br />
+                      distinguished and emerging contemporary designers.
+                    </h3>
+                    <p class="text-sm text-gray-400 mt-1">
+                      "These makeup tutorials remind me that I, too, can reclaim
+                      control of certain parts of my life.”
+                    </p>
+                    <p class="text-lg mt-2 border-t border-black inline-block">
+                      BY LOREN ISPUM
+                    </p>
+                    <p class="top-read-1 pb-1">3 min read</p>
+                  </div>
+                </div>
+
+                <hr class="my-5">
+                <!-- Relevant Coupons & Deals -->
+                <!-- <hr class="mt-5" /> -->
+                <div class="relevant-box">
+                  <h3 class="text-2xl font-bold">Relevant Coupons & Deals</h3>
+
+                  <!-- box1 -->
+                  <div
+                    class="r-box flex my-6 lg:flex-row flex-col  shadow-lg p-3 pb-8 bg-white rounded-md items-center justify-between"
+                  >
+                    <div class="r-img flex cupn-box relative items-center">
+                      <div class="r-text">
+                        <img src="/assets/amazonlogo.png" alt="" />
+                        <p class="r-text-mute">Ends in 2 days</p>
+                      </div>
+                      <div class="r-store-text ">
+                        <h2>Upto 40% Sale</h2>
+                        <h3 class="text-xl font-semibold">
+                          20% Off Your Next Purchase With <br />
+                          Myntra Email Sign Up
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="cat">
+                      <img
+                      class="ml-auto r-share"
+                      src="/assets/Vector (6).png"
+                      alt=""
+                    />
+                      <button
+                        class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                      >
+                        Get Deal
+                      </button>
+                      <img
+                        class="ml-auto r-details"
+                        src="/assets/Group 35.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- box2 -->
+                  <div
+                    class="r-box flex my-6 lg:flex-row flex-col  shadow-lg p-3 pb-8 bg-white rounded-md items-center justify-between"
+                  >
+                    <div class="r-img flex cupn-box relative items-center">
+                      <div class="r-text">
+                        <img src="/assets/amazonlogo.png" alt="" />
+                        <p class="r-text-mute">Ends in 2 days</p>
+                      </div>
+                      <div class="r-store-text ">
+                        <h2>Upto 40% Sale</h2>
+                        <h3 class="text-xl font-semibold">
+                          20% Off Your Next Purchase With <br />
+                          Myntra Email Sign Up
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="cat">
+                      <img
+                      class="ml-auto r-share"
+                      src="/assets/Vector (6).png"
+                      alt=""
+                    />
+                      <button
+                        class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                      >
+                        Get Deal
+                      </button>
+                      <img
+                        class="ml-auto r-details"
+                        src="/assets/Group 35.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- box3 -->
+                  <div
+                    class="r-box flex my-6 lg:flex-row flex-col  shadow-lg p-3 pb-8 bg-white rounded-md items-center justify-between"
+                  >
+                    <div class="r-img flex cupn-box relative items-center">
+                      <div class="r-text">
+                        <img src="/assets/amazonlogo.png" alt="" />
+                        <p class="r-text-mute">Ends in 2 days</p>
+                      </div>
+                      <div class="r-store-text ">
+                        <h2>Upto 40% Sale</h2>
+                        <h3 class="text-xl font-semibold">
+                          20% Off Your Next Purchase With <br />
+                          Myntra Email Sign Up
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="cat">
+                      <img
+                      class="ml-auto r-share"
+                      src="/assets/Vector (6).png"
+                      alt=""
+                    />
+                      <button
+                        class="text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                      >
+                        Get Deal
+                      </button>
+                      <img
+                        class="ml-auto r-details"
+                        src="/assets/Group 35.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+               
+                
+                 
+                 
+                </div>
+
+                <button class="w-full mb-10 bg-gray-100 text-gray-400 text-sm font-semibold rounded-full py-1.5">
+                  MORE COUPONS
+                </button>
+              </div>
+
+              <!-- right -->
+              <div class="py-4 rounded  w-full ">
+                <h3 class="text-2xl font-bold">Top & Trending Guides</h3>
+              <div class="py-4 rounded  w-full bg-white">
+                <div class="topTrending-box mt-3 ">
+                  <div class="flex items-start">
+                    <img src="/assets/Mask Group (9).png" alt="" />
+                    <div class="top-box ml-4">
+                      <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                      <h3 class="mb-2">
+                        Ross Lovegrove masterfully employs cutting-edge
+                        technology to replicate the intricate forms.
+                      </h3>
+                      <p class="lorem">BY LOREN ISPUM</p>
+                      <p class="top-read pb-1">3 min read</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topTrending-box mt-3">
+                  <div class="flex items-start">
+                    <img src="/assets/Mask Group (9).png" alt="" />
+                    <div class="top-box ml-4">
+                      <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                      <h3 class="mb-2">
+                        Ross Lovegrove masterfully employs cutting-edge
+                        technology to replicate the intricate forms.
+                      </h3>
+                      <p class="lorem">BY LOREN ISPUM</p>
+                      <p class="top-read pb-1">3 min read</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topTrending-box mt-3">
+                  <div class="flex items-start">
+                    <img src="/assets/Mask Group (9).png" alt="" />
+                    <div class="top-box ml-4">
+                      <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                      <h3 class="mb-2">
+                        Ross Lovegrove masterfully employs cutting-edge
+                        technology to replicate the intricate forms.
+                      </h3>
+                      <p class="lorem">BY LOREN ISPUM</p>
+                      <p class="top-read pb-1">3 min read</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topTrending-box mt-3">
+                  <div class="flex items-start">
+                    <img src="/assets/Mask Group (9).png" alt="" />
+                    <div class="top-box ml-4">
+                      <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                      <h3 class="mb-2">
+                        Ross Lovegrove masterfully employs cutting-edge
+                        technology to replicate the intricate forms.
+                      </h3>
+                      <p class="lorem">BY LOREN ISPUM</p>
+                      <p class="top-read pb-1">3 min read</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topTrending-box mt-3">
+                  <div class="flex items-start">
+                    <img src="/assets/Mask Group (9).png" alt="" />
+                    <div class="top-box ml-4">
+                      <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                      <h3 class="mb-2">
+                        Ross Lovegrove masterfully employs cutting-edge
+                        technology to replicate the intricate forms.
+                      </h3>
+                      <p class="lorem">BY LOREN ISPUM</p>
+                      <p class="top-read pb-1">3 min read</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="topTrending-box mt-3">
+                  <div class="flex items-start">
+                    <img src="/assets/Mask Group (9).png" alt="" />
+                    <div class="top-box ml-4">
+                      <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                      <h3 class="mb-2">
+                        Ross Lovegrove masterfully employs cutting-edge
+                        technology to replicate the intricate forms.
+                      </h3>
+                      <p class="lorem">BY LOREN ISPUM</p>
+                      <p class="top-read pb-1">3 min read</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- subcribe -box -->
+                <div class="subcribe-box px-10 py-6 mt-5">
+                  <h3 class="text-2xl font-semibold text-white">
+                    Subscribe to get <br />
+                    hand-picked deals <br />
+                    direct to your inbox
+                  </h3>
+                  <div class="relative z-0 mb-6 w-full group mt-5">
+                    <input
+                      type="email"
+                      name="floating_email"
+                      class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none"
+                      placeholder=" "
+                      required
+                    />
+                    <label
+                      class="absolute text-sm text-white duration-300 scale-75 top-3 -z-10 origin-[0]"
+                      >Email address</label
+                    >
+                  </div>
+                  <button class="subcribe-button">subscribe</button>
+                </div>
+
+                        <!-- Popular Stores -->
+                  <div id="popular-stores">
+                    <div class="container mx-auto">
+                    
+                        <h3 class="font-bold text-2xl">Popular Stores</h3>
+                        
+                      <div class="">
+                        <!-- store box 1 -->
+                        <div class="border-b py-4 flex">
+                          <img class="ml-4" width="57px" src="/assets/Group 28.png" alt="" />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">17 Coupons</p>
+                          </div>
+                        </div>
+                        <!-- store box 2 -->
+                        <div class="border-b py-4 flex">
+                          <img class="ml-4" width="57px" src="/assets/Group 28.png" alt="" />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">17 Coupons</p>
+                          </div>
+                        </div>
+                        <!-- store box 3 -->
+                        <div class="border-b py-4 flex">
+                          <img class="ml-4" width="57px" src="/assets/Group 28.png" alt="" />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">17 Coupons</p>
+                          </div>
+                        </div>
+                        <!-- store box 4 -->
+                        <div class="border-b py-4 flex">
+                          <img class="ml-4" width="57px" src="/assets/Group 28.png" alt="" />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">17 Coupons</p>
+                          </div>
+                        </div>
+                        <!-- store box 5 -->
+                        <div class="border-b py-4 flex">
+                          <img class="ml-4" width="57px" src="/assets/Group 28.png" alt="" />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">17 Coupons</p>
+                          </div>
+                        </div>
+                        <!-- store box 6 -->
+                        <div class="border-b py-4 flex">
+                          <img class="ml-4" width="57px" src="/assets/Group 28.png" alt="" />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">17 Coupons</p>
+                          </div>
+                        </div>
+                        <!-- store box 7 -->
+                        <div class="border-b py-4 flex">
+                          <img class="ml-4" width="57px" src="/assets/Group 28.png" alt="" />
+                          <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Ikea</h3>
+                            <p class="text-gray-500 font-semibold">17 Coupons</p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <button class="w-full mb-10 mt-5 bg-gray-100 text-gray-400 text-sm font-semibold rounded-full py-1.5">
+                        SEE ALL STORES
+                      </button>
+                    </div>
+                  </div>
+                  <hr class="mb-5">
+                  <h3 class="text-2xl font-bold mb-2">More from other categories</h3>
+                  <div class="topTrending-box mt-3 ">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topTrending-box mt-3">
+                    <div class="flex items-start">
+                      <img src="/assets/Mask Group (9).png" alt="" />
+                      <div class="top-box ml-4">
+                        <p class="mb-1">BEAUTY & PERSONAL CARE</p>
+                        <h3 class="mb-2">
+                          Ross Lovegrove masterfully employs cutting-edge
+                          technology to replicate the intricate forms.
+                        </h3>
+                        <p class="lorem">BY LOREN ISPUM</p>
+                        <p class="top-read pb-1">3 min read</p>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+          
+          </div>
+          </div>
+          </div>
+        
+      </section>
+  
+
+     
+  </main>
+  <footer class="mt-16">
+    <!-- footer -->
+    <div id="footer">
+     <div class="container mx-auto">
+       <div class="footer-box">
+         <div class="flex justify-between lg:flex-row flex-col">
+           <div class="footer-left w-1/2">
+             <img width="110px" src="/assets/navlogo.png" alt="" />
+             <p class="text-white">
+               Asaan is reader-supported. When you buy something using a link
+               on this site,<br />
+               we may earn a small commission. This will not incur additional
+               cost to you.
+             </p>
+             <div class="footer-icon">
+
+               <!-- <img  src="/assets/Group 32.png" alt=""> -->
+               <div class="flex">
+                  <div class="iconss">
+                    <img src="/assets/instagram (1).png" alt="">
+                  </div>
+                  <div class="iconss">
+                   <img src="/assets/facebook.png" alt="">
+                 </div>
+                  <div class="iconss">
+                   <img src="/assets/Twitter.png" alt="">
+                 </div>
+                  <div class="iconss">
+                   <img src="/assets/Linkedin.png" alt="">
+                 </div>
+                  <div class="iconss">
+                   <img src="/assets/Youtube (1).png" alt="">
+                 </div>
+                  <div class="iconss">
+                   <img src="/assets/Pinterest.png" alt="">
+                 </div>
+               </div>
+               
+             </div>
+           </div>
+           <div class="footer-right text-white">
+             <div class="flex right-1">
+               <div class="mr-8">
+                 <ul>
+                   <li>Browse Sections</li>
+                   <li>Home</li>
+                   <li>Guides</li>
+                   <li>Travel</li>
+                   <li>Tags</li>
+                   <li>Our Writers</li>
+                   <li>Stores Categories</li>
+                 </ul>
+               </div>
+               <div>
+                 <ul>  
+                   <li>Information</li>
+                   <li> Sitemap</li>
+                   <li> About Us</li>
+                   <li> Careers</li>
+                   <li>Contact Us</li>
+                   <li>Privacy</li>
+                   <li>Conditions</li>
+                 </ul>
+               </div>
+               
+             </div>
+             <div class="mt-6 mr-auto ">
+               <img class="block lg:ml-auto mx-auto" src="/assets/Group 201.png" alt="">
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- news letter-box -->
+   <div id="news-letter">
+      <div class="container mx-auto text-center">
+            <p class="text-white">Subscribe to get hand-picked deals direct to your inbox</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+      </div>
+   </div>
+ </footer>
+  </body>
+</html>
